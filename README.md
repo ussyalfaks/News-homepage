@@ -8,14 +8,11 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,17 +24,14 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
+![screencapture-1](https://github.com/user-attachments/assets/b9d1303c-8a27-4fd0-b189-6c4e2481f8e1)
+![screencapture-2](https://github.com/user-attachments/assets/15daa249-49bc-4e67-a438-c51d4776a620)
 
-! 
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: https://github.com/ussyalfaks/News-homepage?tab=readme-ov-file#the-challenge
+- Live Site URL: https://news-homepage-chi-flax.vercel.app/ 
 
 ### Built with
 
@@ -45,25 +39,21 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
+- Js
 
 ### What I learned
 
 Here's a short summary of what you've learned from building your site:
 
 ### Responsive Layouts: 
-You effectively used Tailwind CSS to create a responsive design, ensuring your website adapts to various screen sizes by toggling between desktop and mobile images.
+I effectively used Tailwind CSS to create a responsive design, ensuring your website adapts to various screen sizes by toggling between desktop and mobile images.
 ### Navigation: 
-You've implemented a navigation menu for both desktop and mobile views, including a toggle button for small screens.
+I've implemented a navigation menu for both desktop and mobile views, including a toggle button for small screens.
 
 ### Grid Layout: 
-You applied Tailwind's grid system to arrange content in a clean, structured manner, ensuring an organized layout.
+I applied Tailwind's grid system to arrange content in a clean, structured manner, ensuring an organized layout.
 ### Interactive Design: 
-You utilized hover states for buttons and links to enhance user interactivity and engagement.
+I utilized hover states for buttons and links to enhance user interactivity and engagement.
 ### Mobile-First Approach:
  By hiding and showing elements based on screen size, you demonstrated the ability to prioritize mobile user experience.
 
@@ -86,7 +76,6 @@ overlay.addEventListener('click', () => {
 });
 ```
 
-
 ### Continued development
 
 ### Accessibility (a11y):
@@ -103,11 +92,6 @@ Perfect your control over alignment, spacing, and responsive reordering of eleme
 
 Work on integrating custom CSS more seamlessly with Tailwind. Sometimes, unique design needs require custom styles or media queries that Tailwind might not cover easily.
 Experiment with using Tailwind’s utility-first classes while maintaining custom brand styles for consistency.
-
-
-
-### Useful resources
-
 
 
 ## Author
