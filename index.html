@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+    <header class="flex justify-between items-center py-8">
+        <img src="./assets/images/logo.svg" alt="" srcset="">
+        <nav class="hidden md:block">
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-600 hover:text-red-500">Home</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-red-500">New</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-red-500">Popular</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-red-500">Trending</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-red-500">Categories</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle" class="md:hidden bg-white border border-gray-300 rounded-md p-2">
+            <img src="./assets/images/icon-menu.svg" class="h-6 w-6" alt="" srcset="">
+            <span class="sr-only">Toggle navigation menu</span>
+        </button>
+    </header>
+
+    
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 lg:hidden hidden"></div>
+
+    <div id="mobileNav" class="fixed flex flex-col inset-y-0 right-0 w-64 bg-white shadow-lg lg:hidden transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <img src="./assets/images/icon-menu-close.svg" id="closeNav" class=" text-gray-900 justify-end self-end flex text-3xl mt-9 mx-6 h-9 w-9 cursor-pointer" alt="closeNav">
+        <nav class="flex flex-col space-y-4 mt-8 p-4">
+            <a href="#" class="text-2xl font-semibold hover:text-red-500">Home</a>
+            <a href="#" class="text-2xl font-semibold hover:text-red-500">New</a>
+            <a href="#" class="text-2xl font-semibold hover:text-red-500">Popular</a>
+            <a href="#" class="text-2xl font-semibold hover:text-red-500">Trending</a>
+            <a href="#" class="text-2xl font-semibold hover:text-red-500">Categories</a>
+        </nav>
+    </div>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Featured Article Section -->
+        <div class="lg:col-span-2">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="Abstract colorful shapes" class="w-full object-cover hidden md:block">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="Abstract colorful shapes" class="w-full object-cover block md:hidden">
+
+            <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <h1 class="text-6xl text-custom max-md:text-6xl font-extrabold">The Bright Future of Web 3.0?</h1>
+                <div class="flex justify-between flex-col">
+                    <p class="text-gray-600 mb-4">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    <button class="bg-red-500 hover:bg-gray-900 w-36 hover:text-red-500 hover:text-white font-bold text-gray-900 px-4 py-2 rounded">
+                        READ MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Section -->
+        <div class="bg-gray-900 text-white p-8">
+            <h2 class="text-4xl font-bold text-yellow-500 mb-8">New</h2>
+            <div>
+                <article class="mb-8 pb-8 border-b border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 hover:text-yellow-500 cursor-pointer">Hydrogen VS Electric Cars</h3>
+                    <p class="text-gray-400">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </article>
+                <article class="mb-8 pb-8 border-b border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 hover:text-yellow-500 cursor-pointer">The Downsides of AI Artistry</h3>
+                    <p class="text-gray-400">What are the possible adverse effects of on-demand AI image generation?</p>
+                </article>
+                <article>
+                    <h3 class="text-xl font-bold mb-2 hover:text-yellow-500 cursor-pointer">Is VC Funding Drying Up?</h3>
+                    <p class="text-gray-400">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!--  Articles Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div class="flex space-x-4">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs" class="w-[150px] h-[150px] object-cover">
+            <div>
+                <span class="text-4xl font-bold text-red-500">01</span>
+                <h3 class="text-xl text-custom font-bold mt-2 mb-2 hover:text-red-500">Reviving Retro PCs</h3>
+                <p class="text-gray-600 ">What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+
+        <div class="flex space-x-4">
+            <img src="./assets/images/image-top-laptops.jpg" alt="Top 10 Laptops of 2022" class="w-[130px] h-[150px] object-cover">
+            <div>
+                <span class="text-4xl font-bold text-red-500">02</span>
+                <h3 class="text-xl text-custom font-bold mt-2 mb-2 hover:text-red-500">Top 10 Laptops of 2022</h3>
+                <p class="text-gray-600 ">Our best picks for various needs and budgets.</p>
+            </div>
+        </div>
+
+        <div class="flex space-x-4">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming" class="w-[150px] h-[150px] object-cover">
+            <div>
+                <span class="text-4xl font-bold text-red-500">03</span>
+                <h3 class="text-xl text-custom font-bold mt-2 mb-2 hover:text-red-500">The Growth of Gaming</h3>
+                <p class="text-gray-600 ">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
